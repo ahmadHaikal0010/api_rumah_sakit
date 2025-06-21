@@ -16,3 +16,11 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->group(['prefix' => 'api'], function () use ($router) {
+    $router->get('/', 'RumahSakitController@index'); // get all
+    $router->get('{id}', 'RumahSakitController@show'); // get by id
+    $router->post('/', 'RumahSakitController@store'); // create
+    $router->put('{id}', 'RumahSakitController@update'); // update
+    $router->delete('{id}', 'RumahSakitController@destroy'); // delete
+});
