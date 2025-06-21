@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('nama', 100);
             $table->text('alamat');
-            $table->string('telpon', 20);
+            $table->string('telpon', 20)->nullable();
             $table->double('latitude');
             $table->double('longitude');
             $table->timestamps();
