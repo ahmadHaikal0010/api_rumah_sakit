@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('nama', 100);
             $table->text('alamat');
             $table->string('telpon', 20)->nullable();
+            $table->enum('tipe', ['Tipe A', 'Tipe B', 'Tipe C', 'Tipe D', 'Rumah Sakit Jiwa', 'Rumah Sakit Mata', 'Rumah Sakit Kanker', 'Rumah Sakit Ibu dan Anak']);
             $table->double('latitude');
             $table->double('longitude');
             $table->timestamps();

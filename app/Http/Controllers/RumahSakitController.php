@@ -26,6 +26,7 @@ class RumahSakitController extends Controller
             'nama' => 'required',
             'alamat' => 'required',
             'telpon' => 'nullable',
+            'tipe' => 'required',
             'latitude' => 'required',
             'longitude' => 'required'
         ]);

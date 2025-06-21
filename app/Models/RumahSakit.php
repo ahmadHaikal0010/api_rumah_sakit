@@ -6,5 +6,5 @@ use Illuminate\Database\Eloquent\Model;
 
 class RumahSakit extends Model
 {
-    protected $fillable = ['nama', 'alamat', 'telpon', 'latitude', 'longitude'];
+    protected $fillable = ['nama', 'alamat', 'telpon', 'tipe', 'latitude', 'longitude'];
 }
